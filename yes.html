@@ -2,50 +2,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>💘 You Said Yes!</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>You Said Yes!</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body class="confetti">
-    <audio autoplay loop>
-        <source src="assets/her.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-    <div class="content">
-        <h1>You make me the happiest person alive 💖</h1>
-        <p class="poem">
-        In moments quiet, your name I say,<br>
-        Like whispered wind that leads my way.<br>
-        Through every glance and gentle smile,<br>
-        You’ve made this journey all worthwhile.<br><br>
-
-        You laugh — the stars begin to play,<br>
-        You speak — the clouds just drift away.<br>
-        With every touch, I feel brand new,<br>
-        The world’s a brighter place with you.<br><br>
-
-        And so I ask with heart held high,<br>
-        Let’s walk as one beneath the sky.<br>
-        I’ll hold you close through storm or sun,<br>
-        For me, my Nenye, you’re the one. 💞
-        </p>
-
-        <div class="photos">
-            <img src="assets/photo1.jpg" alt="photo 1" />
-            <img src="assets/photo2.jpg" alt="photo 2" />
-            <img src="assets/photo3.jpg" alt="photo 3" />
-        </div>
-    </div>
-    <script>
-        // Simple confetti using emoji
-        setInterval(() => {
-            const confetti = document.createElement("div");
-            confetti.className = "confetti-piece";
-            confetti.textContent = "🎉";
-            confetti.style.left = Math.random() * 100 + "vw";
-            document.body.appendChild(confetti);
-            setTimeout(() => confetti.remove(), 3000);
-        }, 300);
-    </script>
+  <audio autoplay loop>
+    <source src="assets/her.mp3" type="audio/mpeg">
+  </audio>
+  <div class="content">
+    <h1>You make me the happiest person alive 💖</h1>
+    <div id="poem" class="poem"></div>
+    <div id="photos" class="photos"></div>
+  </div>
+  <script>
+    
+    setTimeout(() => {
+        document.getElementById('poem').innerHTML += `<p>Damn I can’t believe I’m writing a letter but what can I say — I’m so in love with this woman.</p>`;
+        const img = document.createElement('img');
+        img.src = 'assets/photo1.jpg';
+        img.alt = 'photo';
+        document.getElementById('photos').appendChild(img);
+    }, 0);
+    
+    setTimeout(() => {
+        document.getElementById('poem').innerHTML += `<p>She is everything to me and more. I think of her every day and she brings out the best in me.</p>`;
+        const img = document.createElement('img');
+        img.src = 'assets/photo2.jpg';
+        img.alt = 'photo';
+        document.getElementById('photos').appendChild(img);
+    }, 5000);
+    
+    setTimeout(() => {
+        document.getElementById('poem').innerHTML += `<p>Imagine me waiting for 2 hours for her — what can’t I do for her? 😂😂</p>`;
+        const img = document.createElement('img');
+        img.src = 'assets/photo3.jpg';
+        img.alt = 'photo';
+        document.getElementById('photos').appendChild(img);
+    }, 10000);
+    
+    setTimeout(() => {
+        document.getElementById('poem').innerHTML += `<p>The way she smiles at me, the way she holds me, her look when I tell her I love her.</p>`;
+        const img = document.createElement('img');
+        img.src = 'assets/photo4.jpg';
+        img.alt = 'photo';
+        document.getElementById('photos').appendChild(img);
+    }, 15000);
+    
+    setTimeout(() => {
+        document.getElementById('poem').innerHTML += `<p>She is everything I need. The best thing that has happened to me so far this year.</p>`;
+        const img = document.createElement('img');
+        img.src = 'assets/photo5.jpg';
+        img.alt = 'photo';
+        document.getElementById('photos').appendChild(img);
+    }, 20000);
+    
+    setTimeout(() => {
+        document.getElementById('poem').innerHTML += `<p>I don’t want to lose her. I never want to lose her. I want to be with her forever. I love her. I love her. I love her.</p>`;
+        const img = document.createElement('img');
+        img.src = 'assets/photo6.jpg';
+        img.alt = 'photo';
+        document.getElementById('photos').appendChild(img);
+    }, 25000);
+    
+    setTimeout(() => {
+        document.getElementById('poem').innerHTML += `<p>I can say it like 50 times and more.</p>`;
+        const img = document.createElement('img');
+        img.src = 'assets/photo7.jpg';
+        img.alt = 'photo';
+        document.getElementById('photos').appendChild(img);
+    }, 30000);
+    
+    setTimeout(() => {
+        document.getElementById('poem').innerHTML += `<p>The way she also calls me ‘Demi’ — oh my God. At least she’s stopped calling me ‘Chucks baby’ 🌚</p>`;
+        const img = document.createElement('img');
+        img.src = 'assets/photo8.jpg';
+        img.alt = 'photo';
+        document.getElementById('photos').appendChild(img);
+    }, 35000);
+    
+    setTimeout(() => {
+        document.getElementById('poem').innerHTML += `<p>Nenye, my love... I want you to be mine. I’ve always wanted you to be mine. I want it to be forever — like Keisha and Justin… oh wait, they weren’t forever, but we will be sha 😂</p>`;
+        const img = document.createElement('img');
+        img.src = 'assets/photo9.jpg';
+        img.alt = 'photo';
+        document.getElementById('photos').appendChild(img);
+    }, 40000);
+    
+    setTimeout(() => {
+        document.getElementById('poem').innerHTML += `<p>Abeg I’m already going off point 😂 — I love you. And I want you to be my girlfriend.</p>`;
+        const img = document.createElement('img');
+        img.src = 'assets/photo10.jpg';
+        img.alt = 'photo';
+        document.getElementById('photos').appendChild(img);
+    }, 45000);
+    
+    setInterval(() => {
+      const confetti = document.createElement("div");
+      confetti.className = "confetti-piece";
+      confetti.textContent = "🎉";
+      confetti.style.left = Math.random() * 100 + "vw";
+      document.body.appendChild(confetti);
+      setTimeout(() => confetti.remove(), 3000);
+    }, 300);
+  </script>
 </body>
 </html>
