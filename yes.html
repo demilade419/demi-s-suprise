@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>💘 You Said Yes!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="confetti">
+    <audio autoplay loop>
+        <source src="assets/her.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="content">
+        <h1>You make me the happiest person alive 💖</h1>
+        <p class="poem">
+        In moments quiet, your name I say,<br>
+        Like whispered wind that leads my way.<br>
+        Through every glance and gentle smile,<br>
+        You’ve made this journey all worthwhile.<br><br>
+
+        You laugh — the stars begin to play,<br>
+        You speak — the clouds just drift away.<br>
+        With every touch, I feel brand new,<br>
+        The world’s a brighter place with you.<br><br>
+
+        And so I ask with heart held high,<br>
+        Let’s walk as one beneath the sky.<br>
+        I’ll hold you close through storm or sun,<br>
+        For me, my Nenye, you’re the one. 💞
+        </p>
+
+        <div class="photos">
+            <img src="assets/photo1.jpg" alt="photo 1" />
+            <img src="assets/photo2.jpg" alt="photo 2" />
+            <img src="assets/photo3.jpg" alt="photo 3" />
+        </div>
+    </div>
+    <script>
+        // Simple confetti using emoji
+        setInterval(() => {
+            const confetti = document.createElement("div");
+            confetti.className = "confetti-piece";
+            confetti.textContent = "🎉";
+            confetti.style.left = Math.random() * 100 + "vw";
+            document.body.appendChild(confetti);
+            setTimeout(() => confetti.remove(), 3000);
+        }, 300);
+    </script>
+</body>
+</html>
